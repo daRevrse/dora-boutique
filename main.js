@@ -1,4 +1,4 @@
-// Simple interactions for Dora Boutique
+﻿// Simple interactions for Dora Boutique
 
 document.addEventListener('DOMContentLoaded', () => {
     // Elegant reveal of elements on scroll could be added here
@@ -28,3 +28,4 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.insertAdjacentHTML('beforeend', modalHTML);
     }
 });
+

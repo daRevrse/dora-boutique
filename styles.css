@@ -1,4 +1,4 @@
-/* Base Styles */
+﻿/* Base Styles */
 :root {
     --text-color: #333;
     --text-light: #888;
@@ -231,6 +231,32 @@ img {
 }
 
 /* Footer Section */
+/* --- Pagination --- */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 60px 0 20px;
+}
+.pagination a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border: 1px solid var(--border-color);
+    color: var(--text-dark);
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    transition: all var(--transition-speed) ease;
+}
+.pagination a.active, .pagination a:hover {
+    background-color: var(--text-dark);
+    color: var(--bg-light);
+    border-color: var(--text-dark);
+}
+
 .site-footer {
     background-color: #111;
     color: #f1f1f1;
@@ -285,6 +311,14 @@ img {
 }
 
 /* Maintenance Banner */
+.maintenance-banner a {
+    color: white;
+    text-decoration: none;
+}
+.maintenance-banner a:hover {
+    text-decoration: underline;
+}
+
 .maintenance-banner {
     position: fixed;
     left: 0;
@@ -335,7 +369,15 @@ img {
         gap: 30px;
     }
     
-    .maintenance-banner {
+    .maintenance-banner a {
+    color: white;
+    text-decoration: none;
+}
+.maintenance-banner a:hover {
+    text-decoration: underline;
+}
+
+.maintenance-banner {
         font-size: 0.65rem;
         padding: 8px 15px;
     }
@@ -424,4 +466,7 @@ img {
 .modal-actions .btn-secondary:hover {
     color: #1a1a1a;
 }
+
+
+
 
