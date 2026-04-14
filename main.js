@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log("Dora Boutique initialized.");
     
     // We can add a simple dynamic date updater for the top bar
-    const dateSpan = document.querySelector('.top-bar span');
-    if (dateSpan) {
-        const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
-        dateSpan.textContent = new Date().toLocaleDateString('en-US', options);
-    }
+    // const dateSpan = document.querySelector('.top-bar span');
+    // if (dateSpan) {
+    //     const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
+    //     dateSpan.textContent = new Date().toLocaleDateString('en-US', options);
+    // }
 
     // Modal de Maintenance (Forcé à chaque chargement pour la démo)
     if (!document.getElementById('maintenanceModal')) {
