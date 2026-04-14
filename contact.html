@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - DORA BOUTIQUE</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header {
+            text-align: center;
+            padding: 80px 20px 40px;
+        }
+
+        .page-header h1 {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .page-header p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px 60px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            outline: none;
+            background: #fff;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #111;
+        }
+
+        .contact-form textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            padding: 15px;
+            background-color: #111;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #333;
+        }
+
+        .contact-info h3 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-info p {
+            margin-bottom: 20px;
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top-header">
+        <div class="top-bar">
+            <span>Samedi 14 Avril 2026</span>
+            <div class="top-links">
+                <!-- <a href="contact.html">Nous contacter</a>
+                <a href="#">Se connecter</a> -->
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="logo-container">
+            <h1>DORA BOUTIQUE</h1>
+            <p class="slogan">LE PLAISIR DE S'HABILLER</p>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="vetements.html">VÊTEMENTS</a></li>
+                <li><a href="accessoires.html">ACCESSOIRES</a></li>
+                <li><a href="contact.html" class="active">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>Nous Contacter</h1>
+            <p>Une question sur un vêtement, une collection ou une disponibilité ? Écrivez-nous.</p>
+        </div>
+
+        <section class="contact-container">
+            <div class="contact-info">
+                <h3>Notre Boutique</h3>
+                <p>Venez découvrir notre collection de prêt-à-porter directement en magasin :<br>
+                    15 Rue du Commerce<br>
+                    Lomé, Togo</p>
+
+                <h3>Horaires d'ouverture</h3>
+                <p>Lundi - Samedi : 10h00 - 19h30<br>
+                    Dimanche : Fermé</p>
+
+                <h3>Service Client</h3>
+                <p>Téléphone : +41796551264<br>
+                    Email : contact@doraboutique.com</p>
+            </div>
+
+            <form class="contact-form">
+                <input type="text" placeholder="Votre nom complet" required>
+                <input type="email" placeholder="Votre adresse email" required>
+                <input type="text" placeholder="Sujet (ex: Disponibilité d'un costume sur mesure)">
+                <textarea placeholder="Votre message..." required></textarea>
+                <button type="button">Envoyer le message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>DORA BOUTIQUE</h3>
+                <p>La référence en matière de prêt-à-porter élégant et d'accessoires de luxe. L'excellence à chaque
+                    couture.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="vetements.html">Vêtements</a></li>
+                    <li><a href="accessoires.html">Accessoires</a></li>
+                    <li><a href="contact.html">Nous contacter</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Visitez-nous</h3>
+                <p>15 Rue du Commerce<br>Lomé, Togo<br>contact@doraboutique.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dora Boutique. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <div class="maintenance-banner">
+        site en maintenance par FlowKraft Agency
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
